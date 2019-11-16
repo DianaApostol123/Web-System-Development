@@ -19,11 +19,13 @@
 <section>
   
 <p>The application is a web system able to properly assist a museum visitor.</p>
-<p>It also has the option to swich the language: Romanian or English. The changes will also apply for the Virtual Tour and Information pages.</p>
+<p></p>
+
+<h1 style="color: #5e9ca0;">Design of the application</h1>
 
 <h2 style="color: #2e6c80;">Virtual Tour Page</h2>
 
-<p>This page will contain a section for scaning the QR code. In order for the tour to start, scaning of the QR code from the ticket must be done. After this, the tour will start. This will consist of an interctive experience. The video and audio will have a common start. After that, depending on what area you are in the museum, the presentation will change accordinly.</p>
+<p>This page will contain a section for scanning the QR code. In order for the tour to start, scanning of the QR code from the ticket must be done. After this, the tour will start. This will consist of an interactive experience. The video and audio will have a common start. After that, depending on what area you are in the museum, the presentation will change accordingly.</p>
 <p>In order for the app to know the user positioning, the RFID technology will be used. There will be for each area of the museum an RFID transmitor. The app will read the data from the RFID and will show to the user the informations from that section.</p>
 <p>The presentation can be paused when needed, otherwise will contain at it's normal speed. There is also a button that will allow to activate the camera in order to take pictures. At this moment the tour will stop. After the picture is taken, the user can access the button "Back" and the tour will contain.</p>
 <p>At the end the tour can be reloaded. Also a button "Scan QR" will redirect you to the begening page in which you can scan a new QR.</p>
@@ -49,5 +51,20 @@
 
 </section>
 
+<section>
+<h2 style="color: #2e6c80;">QR code</h2>
+<p>The QR code will be done using The METAQRCODE API, which provides developers a way to create their own XML metadata and put it inside a QRCode. 
+This API is Rest based, and can be consumed using JSON or XML.</p>
+<p>We used this because it is a Single purpose API. It is easier to develop and because of the popularity of the tool, the support is more easy to find.</p>
+
+<h2 style="color: #2e6c80;">Data</h2>
+<p>The informations will be taken from the site <a href="http://data.gov.ro/dataset/ghidul-muzeelor-din-romania">data about Romanian museums</a> and <a href="http://ghidulmuzeelor.cimec.ro/">Muzee si Colectii din Romania</a>. The data will be stored in our database, a Postgres Sql Database.
+ We will use API to take the data from there into our application. </p>
+ 
+<h2 style="color: #2e6c80;">Instant Translate</h2>
+ <p>For the Review page we will use a bot that will translate all the text. <a href="https://thereisabotforthat.com/bots/insttranslatebot">The Instant Bot  </a> can translate anything between 104 languages. This will 
+increase the users interaction. If the user doesn't speak the language of another user, there is  a button Translate which will display a pop up in order for the user to choose the desired language.
+After that the bot will change the text to that language. This will happen only for this user, the text will remain the same for the others. </p>
+</section> 
 
 </body></html>
