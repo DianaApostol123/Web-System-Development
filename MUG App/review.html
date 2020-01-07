@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mug App - Review</title>
+<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div id="tooplate_wrapper">
+	<div id="tooplate_header">
+        <div id="header_section">
+            <img id="header_image" src="images/mug_header.jpg">
+        </div>
+            <a href="index.html" id="logo_href">
+                <img id="logo" src="images/mug_logo.png">
+            </a>
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="index.html">Virtual Tour</a></li>
+                <li><a href="photoAlbum.html">Photo Album</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="review.html" class="current">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="help.html">Help&Support</a></li>
+            </ul>    	
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- end of forever header -->
+    
+    <div id="tooplate_middle_sub">
+    	<h2>Review</h2>
+        <p>In order to offer you a great experience you can leave a review for other users to see it too.</p>
+    </div> <!-- end of middle -->
+    
+    <div id="tooplate_content"><span class="content_top"></span>
+    	<div class="box_w330 float_l">
+            <div id="contact_form">
+        
+                <h5>Review Form</h5>
+                
+					<form method="post" name="contact" action="#">
+					
+						<label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
+						<div class="cleaner h10"></div>
+							
+						<label for="text">Review:</label> <textarea id="review" name="review" rows="0" cols="0" class="required"></textarea>
+						<div class="cleaner h10"></div>					
+												
+						<input type="submit" value="Save review" id="submit" name="submit" class="submit_btn float_l" />						
+					</form>
+
+            </div> 
+        </div>
+            
+        <div class="box_w330 float_r">
+            <h5>Reviews</h5>
+              
+            <div class="cleaner h30"></div>	
+			            	<div class="comment">30.12.2019</div>
+  <div class="post_box">
+            	<div class="comment"><a href="#">5</a></div>
+            	<h2>Ion Popescul</h2>
+                <p>Aplicatia este foarte utila. Sunt un iubitor de muzee si de cultura, iar aceasta aplicatie ma ajuta sa tin informatiile despre vizitele mele in acelasi loc.</p>
+                3 comments 
+                <p><a  href="#">See the other comments</a></p>
+                <select id="translate_review"> 
+                    <option value="english">Translate in english</option>
+                    <option value="italiano">Traduci in italiano</option>
+                    <option value="francais">Traduire en francais</option>
+                    <option value="espanol">Traducir en espanol</option>
+                </select>
+                <div class="cleaner"></div>
+			</div>
+        </div>    	
+        
+        <div class="cleaner"></div>
+    </div> <!-- end of content -->
+
+</div> <!-- end of wrapper -->
+
+</body>
+</html>
