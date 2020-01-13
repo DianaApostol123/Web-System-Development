@@ -50,7 +50,7 @@
 
       <h2 id="introduction" style="color: #5e9ca0">2. Introduction</h2>
       <article style="line-height: 30px; margin-right: 50px">
-        <p> The application's purpose is to properly assist a museum visitor. It can be downloaded via an app store (Magazin Play) by using the QR code printed on the museum ticket.
+        <p> The application's purpose is to properly assist a museum visitor. It can be downloaded via an app store by using the QR code printed on the museum ticket.
 		The application will take advantage of the position of the user in the museum, using RFID, in order to determine where the person is and provide her/him useful audio and visual information based on existing data about Romanian museums. The content is available in 2 different languages: romanian and english. If a visitor wants to find out more, (s)he would walk to certain exhibits in order to have access to details of interest. At the end of the tour, the application will offer an overview and the photo album (s)he took along the way presented as time line. This work – plus the user comments/reviews regarding the tour – could be also shared on several significant social networks.
 		Also the application includes for the review page, the possibility of interacting using different languages.</p>
         <br>
@@ -69,7 +69,7 @@
 
 
         <p>In order for the app to know the user positioning in the museum, the RFID technology will be used. There will be for each area of the museum an RFID transmitor. The app will read the data from the RFID and will show to the user the informations from that section. This will be done using <a href="https://www.rfidjournal.com/articles/view?10647">Technology Solutions (UK) Ltd.</a> which sells the 1128 Bluetooth UHF RFID reader that comes with a software development kit so you can write your own apps.</p>
-		<p> Is designed to read and write to tags compliant with the EPC Gen 2 and ISO 18000-6C standard, and incorporates TSL's unique ASCII protocol, which provides a developer with a set of commands that carry out multiple actions locally within the Bluetooth reader.</p>
+		<p> Is designed to read and write to tags and provides a developer with a set of commands that carry out multiple actions locally within the Bluetooth reader.</p>
 
         <h2 style="color: #2e6c80" id="database">3.3. Database</h2>
 
@@ -82,6 +82,7 @@
 		 <h2 style="color: #2e6c80" ; id="server">3.5. Web Server</h2>
 
         <p>The server that we will use is Apache Web Server because the source code of Apache is available for free to anyone and no license is required. Also it can be installed easily and it is highly reliable and performs better.</p>
+		<p>The application has one API between the Server and the application interface. This one will contain methods for Get, Post, Put and Delete. It will be a json format. Another 2 API's are the ones that retrieve data from the external sites. The format will also be json and contains only Get methods.</p>
 		
 				 <h2 style="color: #2e6c80" ; id="environment">3.6. Node.js</h2>
 
