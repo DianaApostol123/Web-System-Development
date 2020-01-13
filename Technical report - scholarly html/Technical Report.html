@@ -1,123 +1,81 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Mug App - Contact</title>
+<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
 
-  <meta name="viewport" content="width=device-width">
-  <title>Museum Web Guide</title>
-  <link rel="stylesheet" href="scholarly.css">
-  <link rel="stylesheet" href="prism-coy.css">
 </head>
-<style>
-  body {
-    max-width: 21cm;
-    margin: auto;
-    line-height: 1.6;
-    font-weight: 300;
-    font-family: Roboto, sans-serif;
-    text-align: justify;
-  }
-</style>
-
 <body>
 
+<div id="tooplate_wrapper">
+	<div id="tooplate_header">
+        <div id="header_section">
+            <img id="header_image" src="images/mug_header.jpg">
+        </div>
+            <a href="index.html" id="logo_href">
+                <img id="logo" src="images/mug_logo.png">
+            </a>
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="index.html">Virtual Tour</a></li>
+                <li><a href="photoAlbum.html">Photo Album</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+			    <li><a href="help.html">Help&Support</a></li>
+            </ul>    	
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- end of forever header -->
+    
+    <div id="tooplate_middle_sub">
+    	<h2>Contact Information</h2>
+        <p>We are glad to collaborate with you. You can tell us your opinion on the <a href="review.html" style="color: white; text-decoration: underline;">Review page</a> or you can find us ar the email: mugapp@gmail.com. Also we are happy to hear from you on Facebook, Twitter, Gmail and Whatsapp.</p>
+    </div> <!-- end of middle -->
+    
+    <div id="tooplate_content"><span class="content_top"></span>
+    	<div class="box_w330 float_l">
+            <div id="contact_form">
+        
+                <h5>Contact Form</h5>
+                
+					<form method="post" name="contact" action="#">
+					
+						<label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
+						<div class="cleaner h10"></div>
+													
+						<label for="email">Email:</label> <input type="text" maxlength="40" id="email" class="input_field" name="email" />
+						<div class="cleaner h10"></div>
+											
+						<label for="subject">Subject:</label> <input type="text" class="validate-subject required input_field" name="subject" id="subject"/>				               
+						<div class="cleaner h10"></div>
+							
+						<label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+						<div class="cleaner h10"></div>				
+												
+						<input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />						
+					</form>
 
-  <h1 style="color: #5e9ca0; margin-left:50px">Museum Web Guide Technical Report</h1>
-  <section>
-    <h1 style="color: #5e9ca0; margin-left:50px">Content</h1>
-    <br>
-    <h1><a href="#abstract" style="color: #2e6c80; margin-left:100px; text-decoration: none">1. Abstract</a></h1>
-    <h1><a href="#introduction" style="color: #2e6c80; margin-left:100px; text-decoration:none">2. Introduction</a></h1>
-    <h1><a href="#structure" style="color: #2e6c80; margin-left:100px; text-decoration:none">3. Structure</a></h1>
-    <h1>&emsp; &emsp; <a href="#qr-code" ; style="color: #2e6c80; margin-left:100px">3.1. QR Code</a></h1>
-	    <h1>&emsp; &emsp; <a href="#rfid" ; style="color: #2e6c80; margin-left:100px">3.2. RFID</a></h1>
-    <h1>&emsp; &emsp;<a href="#database" ; style="color: #2e6c80; margin-left:100px">3.3. Database</a></h1>
-    <h1>&emsp; &emsp;<a href="#translate-bot" ; style="color: #2e6c80; margin-left:100px">3.4. Instant Translate bot</a></h1>
-	    <h1>&emsp; &emsp;<a href="#server" ; style="color: #2e6c80; margin-left:100px">3.5. Web Sever</a></h1>
-			    <h1>&emsp; &emsp;<a href="#environment" ; style="color: #2e6c80; margin-left:100px">3.6. Node.js</a></h1>
-    <h1>&emsp; &emsp;<a href="#external-data" ; style="color: #2e6c80; margin-left:100px">3.7. External Data</a></h1>
-    </h1>
-    <h1><a href="#references" ; style="color: #2e6c80; margin-left:100px; text-decoration: none">4. References</a></h1>
-    <h1><a href="#authors" ; style="color: #2e6c80; margin-left:100px;  text-decoration: none">5. Authors</a></h1>
+            </div> 
+        </div>
+            
+        <div class="box_w330 float_r">
+            <h5>Follow us on Social Media. Find us here:</h5>
+            <br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-skype"></a> 
+            <p> <br> <b>Phone:</b> 010-064-2500 <br />
+                <b>Email:</b>mugapp@gmail.com</p>
+        </div>               
 
-    <h2 id="abstract" style="color: #5e9ca0">1. Abstract</h2>
+        
+        <div class="cleaner"></div>
+    </div> <!-- end of content -->
 
-
-    <article style="line-height: 30px; margin-right: 50px">
-      <p>This Scholarly HTML document describes the Web system internals of the Museum Web Guide (MUG) Application.</p>
-      <br>
-
-      <h2 id="introduction" style="color: #5e9ca0">2. Introduction</h2>
-      <article style="line-height: 30px; margin-right: 50px">
-        <p> The application's purpose is to properly assist a museum visitor. It can be downloaded via an app store by using the QR code printed on the museum ticket.
-		The application will take advantage of the position of the user in the museum, using RFID, in order to determine where the person is and provide her/him useful audio and visual information based on existing data about Romanian museums. The content is available in 2 different languages: romanian and english. If a visitor wants to find out more, (s)he would walk to certain exhibits in order to have access to details of interest. At the end of the tour, the application will offer an overview and the photo album (s)he took along the way presented as time line. This work – plus the user comments/reviews regarding the tour – could be also shared on several significant social networks.
-		Also the application includes for the review page, the possibility of interacting using different languages.</p>
-        <br>
-
-
-
-        <h2 id="structure" style="color: #5e9ca0">3. Structure</h2>
-        <p>In the following section the Web system internals of the MUG Application.</p>
-
-        <h2 style="color: #2e6c80" id="qr-code">3.1. QR Code</h2>
-
-
-        <p>The QR code will be done using The METAQRCODE API, which provides developers a way to create their own XML metadata and put it inside a QRCode. This API is Rest based, and can be consumed using JSON or XML. We are using JSON. We used this because it is a Single purpose API. It is easier to develop and because of the popularity of the tool, the support is more easy to find.</p>
-		
-		      <h2 style="color: #2e6c80" id="rfid">3.2. RFID</h2>
-
-
-        <p>In order for the app to know the user positioning in the museum, the RFID technology will be used. There will be for each area of the museum an RFID transmitor. The app will read the data from the RFID and will show to the user the informations from that section. This will be done using <a href="https://www.rfidjournal.com/articles/view?10647">Technology Solutions (UK) Ltd.</a> which sells the 1128 Bluetooth UHF RFID reader that comes with a software development kit so you can write your own apps.</p>
-		<p> Is designed to read and write to tags and provides a developer with a set of commands that carry out multiple actions locally within the Bluetooth reader.</p>
-
-        <h2 style="color: #2e6c80" id="database">3.3. Database</h2>
-
-        <p> The database used is PostgresSql. The main reason is that it is a very good tool when it comes to integration with other tools. It handles data integrity and complex operations with ease. Another reasons are: it's open source, supports image, video, audio storage and also supports graphical data, it has high availability and is very easy to learn.</p>
-
-        <h2 style="color: #2e6c80" ; id="translate-bot">3.4. Instant Translate bot</h2>
-
-        <p>For the Review page we will use a bot that will translate all the text. <a href="https://thereisabotforthat.com/bots/insttranslatebot">The Instant Bot</a> can translate anything between 104 languages. This will increase the users interaction. If the user doesn't speak the language of another user, there is  a button Translate which will display a pop up in order for the user to choose the desired language. After that the bot will change the text to that language. This will happen only for this user, the text will remain the same for the others.</p>
-		
-		 <h2 style="color: #2e6c80" ; id="server">3.5. Web Server</h2>
-
-        <p>The server that we will use is Apache Web Server because the source code of Apache is available for free to anyone and no license is required. Also it can be installed easily and it is highly reliable and performs better.</p>
-		<p>The application has one API between the Server and the application interface. This one will contain methods for Get, Post, Put and Delete. It will be a json format. Another 2 API's are the ones that retrieve data from the external sites. The format will also be json and contains only Get methods.</p>
-		
-				 <h2 style="color: #2e6c80" ; id="environment">3.6. Node.js</h2>
-
-        <p>Node.js is a JavaScript runtime environment which lets you easily build server-side applications. It's unifying web-application development around a single programming language, rather than different languages for server- and client-side scripts. The advantages are: easy to learn, is used as a Single Programming Language, the support of large and active community, it's known for offering high performance </p>
-
-        <h2 style="color: #2e6c80" ; id="external-data">3.7. External Data</h2>
-
-        <p>The informations will be taken from the site <a href="http://data.gov.ro/dataset/ghidul-muzeelor-din-romania">data about Romanian museums</a> and <a href="http://ghidulmuzeelor.cimec.ro/"> Muzee si Colectii din Romania</a>. The data will be stored in our database, a PostgreSql Database. We will use API to take the data from there into our application. </p>
-
-      </article>
-  </section>
-
- 
- 
-
-  <section>
-    <h2 style="color: #5e9ca0" id="references">4. References</h2>
-    <ol>
-      <li><a href="https://www.programmableweb.com/api/metaqrcode">QR Code</a></li>
-      <li><a href="https://www.rfidjournal.com/articles/view?10647">RFID News Roundup</a></li>
-	  <li><a href="https://www.educba.com/what-is-postgresql/">PostgresSql</a></li>
-      <li><a href="https://www.mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/">The Positive and Negative Aspects of Node.js Web App Development </a> </li>
-      <li><a href="https://thereisabotforthat.com/bots/insttranslatebot">Instant Translate</a></li>
-	  <li><a href="https://apachebooster.com/blog/about-apache-web-server-its-advantages-and-disadvantages/">Apache Booster</a></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2 style="color: #5e9ca0" id="authors">5. Authors</h2>
-    <ol>
-      <li>Ionela Manolache</li>
-      <li>Elena-Diana Apostol</li>
-    </ol>
-  </section>
+</div> <!-- end of wrapper -->
 
 </body>
-
 </html>
